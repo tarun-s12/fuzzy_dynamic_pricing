@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-from mock_data import MOCK_WEATHER_DATA, DEFAULT_WEATHER_DATA, MOCK_TIME_DATA
+from mock_data import MOCK_WEATHER_DATA, DEFAULT_WEATHER_DATA
 
 class TimeDataProvider:
     def get_current_time_data(self):
