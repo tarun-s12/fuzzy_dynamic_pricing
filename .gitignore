@@ -1,0 +1,22 @@
+# Cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+# Library files
+Lib
+
+# Environment files
+Scripts
+pyvenv.cfg
+
+# Shared files
+share
+
+# Miscellaneous files
+Include
+
+
