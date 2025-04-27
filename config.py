@@ -9,7 +9,7 @@ CURRENCY_NAME = "rupees"
 SHOW_GRAPHS = False
 
 # Default values
-DEFAULT_CITY = "London"
+DEFAULT_CITY = "Chennai"
 DEFAULT_TIME_OF_DAY = 12
 DEFAULT_DAY_OF_WEEK = 3
 DEFAULT_SEASON = 2
