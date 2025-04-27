@@ -1,7 +1,7 @@
 import requests
 
 def get_weather(city):
-    url = f"https://wttr.in/{city}?format=%t+%w"
+    url = f"https://wttr.in/{city}?format=%t+%w+%C"
     response = requests.get(url)
 
     weather_data = response.text.strip().split()
@@ -12,6 +12,7 @@ def get_weather(city):
         
         return {
             'temperature': temperature,
+            'condition': weather_data[2],
             'wind_speed': wind_speed
         }
     except IndexError:
