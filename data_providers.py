@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 
+from weather import get_weather
 from mock_data import MOCK_WEATHER_DATA, DEFAULT_WEATHER_DATA
 
 class TimeDataProvider:
@@ -36,6 +37,12 @@ class TimeDataProvider:
 class WeatherDataProvider:    
     def get_weather_data(self): #Change to current city
         return self._get_mock_weather_data(city)
+    
+    def _get_weather_data(self, city):
+        city_data = get_weather(city)
+
+        weather_score = calculate_weather_score(city_data['temperature'], city_data['condition'], city_data['wind_speed'])
+        return weather_score, city_data['temperature'], city_data['condition']
     
     def _get_mock_weather_data(self, city):
         city_data = MOCK_WEATHER_DATA.get(city, DEFAULT_WEATHER_DATA)
