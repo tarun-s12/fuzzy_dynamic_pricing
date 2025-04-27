@@ -20,7 +20,7 @@ class FuzzyPricingSystem:
     
     def calculate_price_adjustment(self, demand, availability, urgency, proximity, 
                                   weather=None, time_of_day=None, day_of_week=None, 
-                                  season=None, city="London"):
+                                  season=None, city="Coimbatore"):
         weather_description = None
         temperature = None
         
